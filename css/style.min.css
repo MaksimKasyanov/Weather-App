@@ -1,0 +1,134 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+  padding: 0;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a,
+li {
+  color: #000;
+  text-decoration: none;
+  list-style: none;
+}
+
+html ::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #181818;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Reem Kufi Fun", sans-serif;
+}
+
+.container {
+  max-width: 1240px;
+}
+
+.loader {
+  width: 300px;
+  height: 225px;
+}
+
+.weather {
+  position: relative;
+  min-width: 300px;
+  padding: 20px;
+  box-shadow: 0px 0px 5px 1px #21bd7e;
+  border-radius: 12px;
+  color: #fff;
+  overflow: hidden;
+}
+.weather::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 130%;
+  height: 50%;
+  background-color: #21bd7e;
+  border-radius: 0 0 100% 5%;
+}
+.weather__header {
+  margin-bottom: 30px;
+}
+.weather__header-subtitle {
+  margin-bottom: 5px;
+}
+.weather__header-title {
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 5px 30px 5px 10px;
+  font-size: 30px;
+  height: 40px;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 0.26);
+}
+.weather__info {
+  display: flex;
+  justify-content: space-between;
+}
+.weather__info-right {
+  text-align: right;
+}
