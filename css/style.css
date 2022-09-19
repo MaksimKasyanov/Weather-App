@@ -129,6 +129,22 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.weather__weather__time-wrapper {
+  height: 64px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.weather__weather__time-text {
+  display: none;
+}
+.weather__weather__time {
+  display: block;
+  width: 60px;
+}
 .weather__info-right {
+  min-width: 100px;
+}
+.weather__info-temperature {
   text-align: right;
 }
