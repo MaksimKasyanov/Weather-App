@@ -311,16 +311,24 @@ body {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+.form {
+  width: 240px;
+}
 .form__group {
+  position: relative;
   border: 1px solid #21bd7e;
   border-right: none;
 }
 .form__input {
+  width: 170px;
   padding: 5px 10px;
   caret-color: #21bd7e;
   color: #21BD7E;
 }
 .form__submit {
+  position: absolute;
+  right: 0;
+  top: 0;
   background-color: #21bd7e;
   color: #fff;
   padding: 5px 20px;
